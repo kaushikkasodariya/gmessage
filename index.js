@@ -1,4 +1,5 @@
-if (window.location.host == "checkout.xola.app" || window.location.host == "sandbox-checkout.xola.com") {
+window.onload = function() {
+  if (window.location.host == "checkout.xola.app" || window.location.host == "sandbox-checkout.xola.com") {
   
     var submit_button = document.getElementsByClassName('action-submit')[0]
     if (submit_button) {
@@ -33,3 +34,4 @@ if (window.location.host == "checkout.xola.app" || window.location.host == "sand
       contact_info_container.appendChild(new_row)
     }
 }
+};
